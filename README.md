@@ -193,3 +193,38 @@ Input Devices → CPU ↔ Memory ↔ Storage ↔ Output Devices
   - CPU accesses the photo data in RAM.
   - CPU processes (renders) it.
   - Output sent to GPU/Monitor.
+
+## 5. Storage - The Long-Term Keeper
+
+### 5.1. Introduction to Storage
+
+- Storage is where data is kept permanently.
+- It is non-volatile, meaning data stays even when power is off.
+- Common types: HDD (Hard Disk Drive), SSD (Solid State Drive).
+- Modern systems often use SSDs for speed and HDDs for large capacity.
+- NVMe (Non-Volatile Memory Express) SSDs connect via PCIe for even faster speeds.
+
+### 5.2. Types of Storage
+
+- **HDD (Hard Disk Drive)**:
+  - Uses spinning disks and read/write heads.
+  - Slower but cheaper per GB.
+- **SSD (Solid State Drive)**:
+  - Uses flash memory (no moving parts).
+  - Faster and more durable but more expensive.
+- **NVMe SSD**:
+  - Modern, uses PCIe lanes (direct CPU connection).
+  - Extremely fast data transfer rates (up to 7000 MB/s).
+- **Optical Drives**:
+  - Use lasers to read/write data on CDs/DVDs.
+- **External Storage**:
+  - USB flash drives, external HDDs/SSDs for portability.
+
+### 5.3. Storage Interfaces
+
+- **SATA (Serial ATA)**:
+  - Common interface for HDDs and SSDs.
+  - Max speed ~600 MB/s.
+- **NVMe (Non-Volatile Memory Express)**:
+  - High-speed interface for SSDs using PCIe.
+  - Max speed several GB/s.
