@@ -302,3 +302,15 @@ Input Devices → CPU ↔ Memory ↔ Storage ↔ Output Devices
 | Control Bus | CPU → All components | Control signals | Read/Write, Interrupt |
 | PCIe Bus | CPU ↔ GPU/SSD | High-speed expansion | PCIe 5.0 |
 | USB Bus | CPU ↔ External devices | Peripheral connection | USB4 / Thunderbolt 4 |
+
+## 7. I/O Devices - The Interaction Points
+
+### 7.1. Introduction to I/O Devices
+
+- Input Devices:
+  - Used to provide data to the computer.
+  - Examples: Keyboard, Mouse, Microphone, Scanner.
+
+- Output Devices:
+  - Used to show processed data.
+  - Examples: Monitor, Printer, Speaker.
