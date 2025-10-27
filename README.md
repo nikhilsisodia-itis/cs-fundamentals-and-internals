@@ -76,3 +76,28 @@
   - The OS tells the application (like a text editor) — “User typed A”.
   - The app displays “A” on screen.
 - Each layer translates and passes messages to the next — this is called a “stack”.
+
+## 2. Hardware Layer (The Physical Core of the Computer System)
+
+### 2.1 Introduction to Hardware
+
+- Hardware is the tangible (physical) part of a computer.
+- It’s everything user can touch and see — from the keyboard to the CPU chip.
+
+### 2.2 Hardware responsibilities
+
+- It is responsible for:
+  - Input – receiving data.
+  - Processing – transforming data.
+  - Storage – keeping data.
+  - Output – showing results.
+
+### 2.3 Hardware Functional Blocks
+
+- A computer’s hardware can be visualized in five main functional blocks:
+
+```bash
+Input Devices → CPU ↔ Memory ↔ Storage ↔ Output Devices
+                      ↑
+                     Bus System (communication link)
+```
