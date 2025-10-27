@@ -228,3 +228,77 @@ Input Devices → CPU ↔ Memory ↔ Storage ↔ Output Devices
 - **NVMe (Non-Volatile Memory Express)**:
   - High-speed interface for SSDs using PCIe.
   - Max speed several GB/s.
+
+## 6. Bus System - The Communication Highway
+
+### 6.1. Introduction to Bus System
+
+- A bus in a computer system is a communication pathway that connects different components of a computer (like CPU, memory, and input/output devices) so they can exchange data and signals efficiently.
+- It is like a highway inside the computer- data and control signals travel between CPU, RAM, storage, etc.
+
+### 6.2. Types of Buses
+
+- **Data Bus**:
+  - Carries actual data between components.
+  - Width (e.g., 32-bit, 64-bit) determines how much data can be transferred at once.
+- **Address Bus**:
+  - Carries memory addresses from CPU to memory.
+  - Width determines maximum addressable memory (e.g., 32-bit = 4GB, 64-bit = 16EB).
+- **Control Bus**:
+  - Carries control signals (read/write, interrupt requests) to coordinate operations.
+
+### 6.3. Bus Architecture
+
+- **Front-Side Bus (FSB)**:
+  - Connects CPU ↔ Memory Controller (Northbridge).
+  - Carries data, addresses, and control signals.
+  - Modern CPUs have integrated memory controllers, so the traditional FSB is mostly replaced.
+
+- **Back-Side Bus (BSB)**:
+  - Used for CPU ↔ Cache (L3) communication.
+  - Very fast and private to the CPU.
+
+- **System Bus**:
+  - Connects main memory, CPU, and I/O controllers.
+  - Replaced in newer systems by point-to-point connections like Intel’s QuickPath Interconnect (QPI) or AMD’s Infinity Fabric.
+
+- **Expansion Buses**:
+  - Used to connect external or peripheral devices to the system.
+  - Examples:
+    - PCI Express (PCIe) → connects GPU, SSD, Wi-Fi cards, etc. (very fast).
+    - USB → universal connection for peripherals (keyboard, mouse, storage).
+    - SATA / NVMe → for storage devices (HDDs, SSDs).
+
+### 6.4. Bus Speed and Performance
+
+- Bus speed (measured in MHz or GHz) affects how fast data can be transferred.
+- Wider buses (more bits) can transfer more data simultaneously.
+- Modern systems use high-speed buses like PCIe for graphics cards and NVMe SSDs.
+
+### 6.5. Data Flow via Bus System
+
+- Let’s see how buses work together when user opens a file on the PC:
+  - CPU sends a request over the control bus → “Read file data from storage.”
+  - Address bus tells where the data is stored (RAM or SSD address).
+  - Data bus transfers the actual bytes of the file.
+  - PCIe bus might be used if the file is on an SSD.
+  - The data finally reaches the CPU cache and is displayed to you.
+
+### 6.6. Modern Advancements in Bus Systems
+
+- Modern computer architectures focus on speed and parallelism:
+  - Point-to-Point links (like QPI, HyperTransport, Infinity Fabric) replaced shared buses.
+  - PCIe 5.0 / 6.0: Extremely high bandwidth for GPUs and SSDs.
+  - NVLink (NVIDIA): Ultra-fast GPU-GPU communication.
+  - USB4 / Thunderbolt 4: Unified high-speed I/O bus for external devices.
+- These advancements ensure that data flows quickly and efficiently between components, minimizing bottlenecks and maximizing performance.
+
+### 6.7. Summary
+
+| Bus Type | Connects | Purpose | Example Technology |
+| - | - | - | - |
+| Data Bus | CPU ↔ Memory | Data transfer | DDR5 memory bus |
+| Address Bus | CPU → Memory/I/O | Memory addressing | Memory mapping |
+| Control Bus | CPU → All components | Control signals | Read/Write, Interrupt |
+| PCIe Bus | CPU ↔ GPU/SSD | High-speed expansion | PCIe 5.0 |
+| USB Bus | CPU ↔ External devices | Peripheral connection | USB4 / Thunderbolt 4 |
