@@ -101,3 +101,56 @@ Input Devices → CPU ↔ Memory ↔ Storage ↔ Output Devices
                       ↑
                      Bus System (communication link)
 ```
+
+## 3. CPU - The Central Processing Unit
+
+### 3.1. Introduction to CPU
+
+- The CPU is the brain of your computer.
+- It executes instructions, performs calculations, and controls data flow between components.
+
+### 3.2. CPU Components and Functionality
+
+- The CPU consists of:
+
+  | Part | Full Form | Function | Example |
+  | - | - | - | - |
+  | **ALU** | Arithmetic Logic Unit. | Performs math and logical operations. | Add, subtract, compare values. |
+  | **CU** | Control Unit. | Directs data movement and coordinates operations. | Tells ALU and memory what to do. |
+  | **Registers** | – | Tiny, super-fast storage locations inside CPU. | Store immediate values, e.g., result of 2+3. |
+
+### 3.3. CPU Operation Cycle
+
+- How CPU works:
+  1. Fetch: Get instruction from memory.
+  2. Decode: Figure out what the instruction means.
+  3. Execute: Perform the operation (math, data move, etc.).
+  4. Store: Save results back to memory or registers.
+
+### 3.4. CPU Performance Factors
+
+- Multicore & Multithreading:
+  - Core:
+    - A processing unit inside a CPU chip.
+    - Modern CPUs have multiple cores (e.g., 4-core, 8-core).
+  - Thread:
+    - A lightweight virtual CPU.
+    - Each core can handle multiple threads using Hyper-Threading.
+- Clock Speed:
+  - Measured in GHz (gigahertz).
+  - Higher clock speed = more instructions per second.
+- Cache Memory:
+  - Small, fast memory inside CPU.
+  - Stores frequently used data for quick access.
+- Instruction Set Architecture (ISA):
+  - The set of instructions the CPU can understand and execute.
+  - Examples: x86, ARM.
+
+### 3.5. Types of CPUs
+
+- CISC (Complex Instruction Set Computer):
+  - Has many complex instructions.
+  - Example: Intel x86 processors.
+- RISC (Reduced Instruction Set Computer):
+  - Has fewer, simpler instructions.
+  - Example: ARM processors.
