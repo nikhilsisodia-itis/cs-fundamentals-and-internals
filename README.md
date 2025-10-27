@@ -154,3 +154,42 @@ Input Devices → CPU ↔ Memory ↔ Storage ↔ Output Devices
 - RISC (Reduced Instruction Set Computer):
   - Has fewer, simpler instructions.
   - Example: ARM processors.
+
+## 4. Memory - The Working Space
+
+### 4.1. Introduction to Memory
+
+- Memory is where data is temporarily stored while being processed.
+- It is volatile, meaning data disappears when power is off.
+- `sudo dmidecode -t memory` can be used on Linux to show actual RAM stick details (brand, size, speed).
+- Main type: RAM (Random Access Memory).
+
+### 4.2. Memory Hierarchy
+
+| Level | Name | Speed | Example | Purpose |
+| - | - | - | - | - |
+| L1 Cache | Inside CPU | Fastest | 32KB–64KB | Immediate data |
+| L2 Cache | Inside CPU | Fast | 256KB–1MB | Recent data |
+| L3 Cache | Shared | Slower | 4MB–12MB | Shared by cores |
+| RAM | Outside CPU | Slower | 8GB, 16GB, 32GB+ | Main working memory |
+| Storage | Disk | Slowest | 512GB, 1TB, 2TB+ SSD | Long-term storage |
+
+### 4.3. Types of Memory
+
+- **DRAM (Dynamic RAM)**:
+  - Most common type of RAM.
+  - Needs constant refreshing to keep data.
+- **SRAM (Static RAM)**:
+  - Faster and more expensive.
+  - Doesn’t need refreshing.
+- **Virtual Memory**:
+  - Uses part of storage (HDD/SSD) as extra RAM when physical RAM is full.
+  - Slower than real RAM.
+
+### 4.4. Data Flow in Memory
+
+- Example: User opens a photo:
+  - File is read from SSD → RAM.
+  - CPU accesses the photo data in RAM.
+  - CPU processes (renders) it.
+  - Output sent to GPU/Monitor.
