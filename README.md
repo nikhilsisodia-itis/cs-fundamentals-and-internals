@@ -6,7 +6,7 @@ Concise, human-friendly notes covering core computer systems topics: hardware, f
 
 ## Repository short description
 
-Computer System Fundamentals and Internals — concise study notes on how computers boot, how operating systems work, and how processes, memory, and devices are managed.
+Computer System Fundamentals and Internals- concise study notes on how computers boot, how operating systems work, and how processes, memory, and devices are managed.
 
 ## What’s in this repo
 
@@ -17,7 +17,7 @@ This folder contains a small, curated set of markdown notes designed to teach (o
 - `02.the-os.md` — Operating system concepts: kernel vs user space, system calls, process management, memory and file system responsibilities, and device management basics.
 - `03.process-internals-and-scheduling.md` — Process lifecycle, creation (fork/exec), context switching, scheduling algorithms, and zombies/orphans.
 - `04.memory-management-internals.md` — Virtual memory, paging, page tables, swap, fragmentation, thrashing, and how the OS maps virtual → physical memory.
-- `05.device-management-and-drivers.md` — Device drivers, `/dev`, kernel modules, `dmesg`, `udev`, sysfs/procfs, and common device management flows (e.g., plugging a USB drive).
+- `05.device-management-and-drivers.md` — Device drivers, `/dev`, kernel modules, `dmesg`, `udev`, and common device management flows (e.g., plugging a USB drive).
 
 ## Who this is for
 
@@ -49,9 +49,5 @@ This folder contains a small, curated set of markdown notes designed to teach (o
 
 - Small improvements (typo fixes, small clarifications) are welcome — open a PR with changes to the relevant `.md` file.
 - For larger structural changes or new chapters, open an issue to discuss scope and organization first.
-
-## License & Attribution
-
-- No license file is included by default. If you want this repo to be open-source, add a `LICENSE` file (MIT, CC-BY, etc.) and update `README.md` accordingly.
 
 ---
